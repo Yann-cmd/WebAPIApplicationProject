@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connexion – PlantFood APP</title>
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+<body>
+    <div class="login-content">
+        <header class="plantfood-header">
+            <h1>PlantFood APP</h1>
+            <button onclick="redirectToHome()">Accueil</button>
+        </header>
+
+        <main class="login-container">
+            <h2>Connexion</h2>
+            <form id="login-form" onsubmit="submitLoginForm(event)">
+                <label for="username">Identifiant</label>
+                <input type="text" id="username" name="username" required />
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required />
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required />
+
+                <button type="submit">Se connecter</button>
+            </form>
+        </main>
+    </div>
+    <script src="./js/login.js"></script>
+</body>
+</html>

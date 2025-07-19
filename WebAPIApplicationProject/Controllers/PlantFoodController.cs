@@ -28,9 +28,10 @@ namespace WebAPIApplicationProject.Controllers
         /// </summary>
         [HttpGet]
         [AllowAnonymous]
-        public async Task<ActionResult<IEnumerable<PlantFood>>> GetPlantFoods()
+        public async Task<ActionResult<List<PlantFood>>> GetPlantFoods()
         {
             return await _context.PlantFoods.ToListAsync();
+            //return await Task.FromResult(Ok(PlantFoodConstants.DefaultPlantFood));
         }
 
         // GET: api/PlantFood/5
@@ -82,7 +83,7 @@ namespace WebAPIApplicationProject.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok("Aliment correctement mis à jour.");
         }
 
         // POST: api/PlantFood
@@ -115,7 +116,7 @@ namespace WebAPIApplicationProject.Controllers
             _context.PlantFoods.Remove(plantFood);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("Aliment correctement supprimé.");
         }
 
         private bool PlantFoodExists(long id)

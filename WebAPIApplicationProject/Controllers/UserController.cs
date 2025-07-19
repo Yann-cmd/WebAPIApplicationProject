@@ -27,6 +27,7 @@ namespace WebAPIApplicationProject.Controllers
         /// Récupère la liste utilisateurs.
         /// </summary>
         [HttpGet]
+        [AllowAnonymous] // simplement pour test
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
@@ -80,7 +81,7 @@ namespace WebAPIApplicationProject.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok("Utilisateur correctement mis à jour.");
         }
 
         // POST: api/User
@@ -114,7 +115,7 @@ namespace WebAPIApplicationProject.Controllers
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok("Utilisateur correctement supprimé.");
         }
 
         private bool UserExists(long id)

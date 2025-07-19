@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlantFood APP</title>
+    <link rel="stylesheet" href="./css/site.css" />
+</head>
+<body>
+    <div class="plantfood-content">
+        <header class="plantfood-header">
+            <h1>PlantFood APP</h1>
+            <div class="filter-bar">
+                <label>
+                    <input type="checkbox" id="season-filter" />
+                    Aliments de saison
+                </label>
+
+                <label>
+                    <input type="checkbox" id="vegetable-filter" />
+                    Légumes
+                </label>
+
+                <label>
+                    <input type="checkbox" id="fruit-filter" />
+                    Fruits
+                </label>
+
+                <input type="text" id="search" placeholder="Rechercher..." />
+                <div id="account-section"></div>
+            </div>
+        </header>
+
+        <div id="plant-food-list" class="grid plantfood-list"></div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
