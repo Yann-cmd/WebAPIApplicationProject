@@ -37,7 +37,9 @@ Une fois toutes ces étapes prises en compte, vous pouvez lancer le projet.
 
 Il n'y a pas de compte enregistré par défaut, l'utilisateur est libre de s'en créer un directement depuis l'interface web.
 
-Dans votre IDE, rendez-vous en haut de votre écran et cliquez sur l'icone d'une flèche verte __Exécuter__. Cela va exécuter le projet et lancer directement le FRONT et BACK en même temps. Par défaut, le swagger s'ouvrira automatiquement à cet URL : ```https://localhost:7168/swagger/index.html```.
+Dans votre IDE, rendez-vous en haut de votre écran et cliquez sur l'icone d'une flèche verte __Exécuter__. 
+
+Cela va exécuter le projet et lancer directement le FRONT et BACK en même temps. Par défaut, le swagger s'ouvrira automatiquement à cet URL : ```https://localhost:7168/swagger/index.html```.
 
 Le front tourne sur le port : __7168__
 
