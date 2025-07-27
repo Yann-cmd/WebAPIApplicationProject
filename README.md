@@ -2,9 +2,13 @@
 
 # 1. Projet
 
-WebAPIApplicationProject est un projet d'API WEB en c# .NET version ```8.0```. Il permet d'exposer un CRUD complet sur la nourriture végétale comme les fruits et les légumes. Le projet comprends également une interface FRONT. Le but principal de cette interface
-est de permettre aux utilisateurs d'accéder à une liste de fruits et légumes et de pouvoir savoir lequels parmi les liste sont des fruits/légumes de saison et leur provenance. Cela peut être intérressant pour les personnes qui cherchent à se nourrir avec des produits
-locaux et de saisons. L'interface web propose également un espace de connexion et de création de compte.
+WebAPIApplicationProject est un projet d'API WEB en c# .NET version ```8.0```. 
+
+Il permet d'exposer un CRUD complet sur la nourriture végétale comme les fruits et les légumes. Le projet comprends également une interface FRONT. 
+
+Le but principal de cette interface est de permettre aux utilisateurs d'accéder à une liste de fruits et légumes et de pouvoir savoir lequels parmi les liste sont des fruits/légumes de saison et leur provenance. Cela peut être intérressant pour les personnes qui cherchent à se nourrir avec des produits locaux et de saisons. 
+
+L'interface web propose également un espace de connexion et de création de compte.
 
 # 2. Architecture
 
