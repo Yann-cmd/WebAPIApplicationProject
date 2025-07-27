@@ -44,3 +44,7 @@ Cela va exécuter le projet et lancer directement le FRONT et BACK en même temp
 Le front tourne sur le port : __7168__
 
 Le back tourne sur le port : __5031__ (nécessaire si vus voulez faire des tests de l'API depuis _Postman_ par exemple).
+
+Attention : Une liste de données de fruits/légumes statique et actuellement utilisée dans le Getter de PlantfoodController pour populer l'application et avoir un gros jeux de données.
+
+Pour avoir accès aux données manuellement créées, il sera nécessaire de commenter la ligne actuelle et de décommenter la ligne suivante.
