@@ -69,6 +69,7 @@ function displayPlantFoods(plantFoodList) {
         div.innerHTML = `
                     <img src="${imageUrl}" alt="${item.name}" />
                     <h2>${item.name}</h2>
+                    <p>${item.provenance.join(" - ")}</p>
                     <p>${item.isVegetable ? 'Légume' : 'Fruit'}</p>
                     <button>Voir plus</button>
                 `;
