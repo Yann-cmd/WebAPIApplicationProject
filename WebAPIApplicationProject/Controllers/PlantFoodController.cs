@@ -30,8 +30,8 @@ namespace WebAPIApplicationProject.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<List<PlantFood>>> GetPlantFoods()
         {
-            return await _context.PlantFoods.ToListAsync();
-            //return await Task.FromResult(Ok(PlantFoodConstants.DefaultPlantFood));
+            //return await _context.PlantFoods.ToListAsync();
+            return await Task.FromResult(Ok(PlantFoodConstants.DefaultPlantFood));
         }
 
         // GET: api/PlantFood/5
